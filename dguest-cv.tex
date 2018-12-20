@@ -11,6 +11,8 @@
 %% custom commands
 \newcommand{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{\texttt{arXiv:#1}}}
 
+\newlength{\savedindent}
+
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
 \moderncvcolor{black}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
@@ -25,6 +27,7 @@
 \usepackage[scale=0.75]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
 
 \usepackage{bm}
 
@@ -74,20 +77,32 @@
 %% \cvitem{supervisors}{Supervisors}
 %% \cvitem{description}{Short thesis abstract}
 
-\section{Experience}
-\cventry{2009--present}{Physicist}{ATLAS Collaboration}{Geneva, Switzerland}{}{%
-  \begin{itemize}%
-  \item Searches for low-mass hadronic resonances
-  \item Searches for dark matter produced in association with $W$, $Z$, or Higgs bosons
-  \item Convener for the Higgs-tagging subgroup
-  \item Liaison with University of California, Irvine (UCI) Computer Science Department
-  \item Lead software developer for deep learning algorithms within ATLAS event reconstruction
-  \item Software developer for FELIX component of the ATLAS Run 3 data acquisition system
-  %% \item Searches for supersymmetric particles decaying to charm quarks
-  \item Developer for $b$- and $c$-jet identification algorithms
-  %% \item Efficiency and resolution for drift tubes in the ATLAS Transition Radiation Tracker
-  \end{itemize}
-}
+
+\section{Research Experience}
+\subsection{ATLAS Collaboration, Ongoing}
+%% \cventry{2009--}{Physicist}{ATLAS Collaboration}{Geneva, Switzerland}{}{%
+%%   \begin{itemize}%
+%%   %% \item Searches for low-mass hadronic resonances
+%%   %% \item Searches for dark matter produced in association with $W$, $Z$, or Higgs bosons
+%%   \item Liaison with University of California, Irvine (UCI) Computer Science Department
+%%   \item Software developer for FELIX component of the ATLAS Run 3 data acquisition system
+%%   %% \item Searches for supersymmetric particles decaying to charm quarks
+%%   \item Developer for $b$- and $c$-jet identification algorithms
+%%   %% \item Efficiency and resolution for drift tubes in the ATLAS Transition Radiation Tracker
+%%   \end{itemize}
+%% }
+
+\cventry{Nov~2018--}{Analysis Contact}{Mono-$H$, $H \to b\bar{b}$}{Physics, Exotics}{}{}
+\cventry{May~2018--}{Group Convener}{Machine Learning Forum}{Computing}{}{}
+\cventry{April~2017--}{Group Convener}{Boosted $H \to b\bar{b}$ Taskforce}{Flavor Tagging and JetEtMiss}{}{}
+\cventry{2012--}{Algorithm Developer}{}{Flavor Tagging Group}{}{}
+\cventry{2009--}{Physics Analysis}{}{ATLAS Experiment}{}{}
+\subsection{ATLAS Collaboration, Past Projects}
+\cventry{Fall~2018}{Taskforce Chair}{Software and Database Review}{Flavor Tagging}{}{}
+\cventry{2016--2017}{Software Developer}{Front End Links (FELIX)}{Trigger and Data Acquisition}{}{}
+\cventry{2009--2012}{Detector Studies}{}{ATLAS Transition Radiation Tracker}{}{}
+
+\subsection{Other Experiments}
 \cventry{2005--2007}{Research Assistant}{Hall Labs}{Amherst MA, USA}{}{%
   \begin{itemize}
   \item Constructed and commissioned a cross-beam far off-resonance optical trap for Bose-Einstein Condensates
@@ -100,6 +115,8 @@
   \end{itemize}
 }
 
+
+
 %% \section{Research Interests}
 %% \cvitemwithcomment{Language 1}{Skill level}{Comment}
 %% \cvitemwithcomment{Language 2}{Skill level}{Comment}
@@ -110,11 +127,6 @@
 %% \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
 %% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
 
-\section{Research Interests}
-\cvitem{Physics}{Focusing on LHC hadronic resonances and dark matter searches}
-\cvitem{Computing}{Focused on deep neural networks and data pipelines}
-\cvitem{Education}{Increasing knowledge transfer between high-energy physics and the broader data-science community}
-%% \cvitem{Software Infrastructure}{Particularly streamlining the application of machine learning algorithms within performance-critical data pipelines}
 
 %% \section{Extra 1}
 %% \cvlistitem{Item 1}
@@ -128,6 +140,8 @@
 
 \section{Publications}
 \subsection{Hundreds of published papers as part of the ATLAS Collaboration with over 10,000 citations.}
+\cvitem{Early 2019}{Search for low-mass resonances decaying into two jets and produced in association with a photon using $pp$ collisions at $s=\sqrt{13}\,\mathrm{TeV}$ with the ATLAS detector\newline{}
+\textit{In Preparation for Physics Letters B: }\url{https://cds.cern.ch/record/2652013}}
 \cvitem{Nov 2017}{Search for Dark Matter Produced in Association with a Higgs Boson Decaying to $b \bar{b}$ Using 36 $\mathrm{fb}^{-1}$ of $pp$ Collisions at $\sqrt{s}=13\,\mathrm{TeV}$ with the ATLAS Detector\newline{} \textit{\href{https://doi.org/10.1103/PhysRevLett.119.181804}{Phys. Rev. Lett. 119, 181804}}, \arxiv{1707.01302}}
 \cvitem{July 2017}{Optimisation and performance studies of the ATLAS $b$-tagging algorithms for the 2017-18 LHC run\newline{}
   \textit{Available from CERN: }\url{https://cds.cern.ch/record/2273281}}
@@ -141,7 +155,11 @@
 \cvitem{Jan 2015}{Performance and Calibration of the JetFitterCharm Algorithm for $c$-Jet Identification\newline{}
   \textit{Available from CERN:} \url{https://cds.cern.ch/record/1980463}}
 
-\section{Conference, Seminar, and Workshop Presentations}
+\section{Conferences, Seminars, and Workshops}
+
+\subsection{As Organizer}
+
+\cventry{Oct 2018}{\href{https://indico.cern.ch/event/735932/}{3rd ATLAS Machine Learning Workshop}}{}{CERN}{}{}
 
 \subsection{As Presenter}
 
@@ -161,6 +179,13 @@
 \subsection{As Co-author}
 
 \cventry{May 2008}{Vortex Lattices in a Crossed-Beam Optical Dipole Trap}{39th Annual Meeting of the APS Division of Atomic, Molecular, and Optical Physics}{State Collage, Pennsylvania, USA}{}{}
+
+\section{Other Research Interests}
+%% \cvitem{Physics}{Focusing on LHC hadronic resonances and dark matter searches}
+\cvitem{Computing}{Focused on deep neural networks and data pipelines}
+\cvitem{Education}{Increasing knowledge transfer between high-energy physics and the broader data-science community}
+%% \cvitem{Software Infrastructure}{Particularly streamlining the application of machine learning algorithms within performance-critical data pipelines}
+
 
 \section{Teaching}
 
