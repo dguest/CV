@@ -3,7 +3,7 @@ PDFTEX = pdflatex -interaction=nonstopmode -halt-on-error -shell-escape
 
 .PHONY: all
 
-TEX := dguest-cv.tex
+TEX := $(wildcard dguest-*.tex)
 ALLSRC := $(TEX)
 all: $(ALLSRC:.tex=.pdf)
 
