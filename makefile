@@ -12,3 +12,5 @@ COLOR_WARNINGS := '^LaTeX Warning:|Fatal error'
 FILTER_WARN := egrep -v $(IGNORE_WARNINGS) | egrep --color $(COLOR_WARNINGS)
 %.pdf: %.tex
 	$(PDFTEX) $<
+
+dguest-cv.pdf: publist.tex dguest-cv.tex
