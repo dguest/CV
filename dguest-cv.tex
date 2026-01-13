@@ -6,6 +6,11 @@
 % available at http://www.latex-project.org/lppl/.
 
 
+%% things I can't decide on, define as macros
+\newcommand{\postdoc}{Postdoc}
+\newcommand{\atlas}{ATLAS}
+
+
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 %% custom commands
@@ -79,10 +84,45 @@
 %% \cvitem{description}{Short thesis abstract}
 
 \section{Employment}
-\cventry{Jul 2020--}{Postdoctoral Researcher}{Humboldt University}{Berlin, DE}{}{Researcher on ATLAS Experiment}
-\cventry{2015--2020}{Postdoctoral Researcher}{University of California, Irvine}{Irvine, CA, USA}{}{Researcher on ATLAS Experiment}
+\subsection{As ATLAS Experiment Member}
+\cventry{Nov 2020--}{\postdoc}{Humboldt University}{Berlin, DE}{}{
+  \begin{itemize}
+  \item Searches for $HH$ production in the $b \bar{b} b \bar{b}$ final state
+  \item Machine learning for $b$-quark identification
+  \end{itemize}
+}
+\cventry{2020}{\postdoc}{Universit\"{a}t Innsbruk}{Innsbruk, AT}{}{
+  Mandate identical to that at Humboldt University
+}
+\cventry{2015--2020}{\postdoc}{University of California, Irvine}{Irvine, CA, USA}{}{
+  \begin{itemize}
+  \item Searches for exotic particles in simplified extensions of the Standard Model
+  \item Machine learning for LHC physics
+  \end{itemize}
+}
+\cventry{2008--2016}{Ph.D.\ Candidate}{Yale University}{New Haven, Connecticut, USA}{}{
+  \begin{itemize}
+  \item Searches for Supersymmetry
+  \item Algorithm development for $c$-quark identification
+  \item ATLAS Transition Radiation Tracker studies
+  \item Teaching Assistant for Undergraduates
+  \end{itemize}
+}
+\subsection{Outside ATLAS Experiment}
+\cventry{2007--2008}{Teaching Fellow}{Amherst College}{Amherst, Massachusetts, USA}{}{
+  \begin{itemize}
+  \item Introductory Mechanics Lab
+  \item Introductory Electromagnetism Lab
+  \end{itemize}
+}
+\cventry{2003--2004}{Research Assistant}{Dartmouth Medical School}{Hanover NH, USA}{}{
+  \begin{itemize}
+  \item Data aquisition via rodent telemetry
+  \item Data analysis in MATLAB
+  \end{itemize}
+}
 
-\section{Research Appointments in the ATLAS Experiment}
+\section{Appointments and Awards in \atlas}
 
 %% \cventry{2009--}{Physicist}{ATLAS Collaboration}{Geneva, Switzerland}{}{%
 %%   \begin{itemize}%
@@ -96,7 +136,11 @@
 %%   \end{itemize}
 %% }
 
+\cventry{2025--2026}{Coordinator}{Atlas}{Inter-Experimental LHC Machine Learning Working Group}{}{}
 \cventry{2023--2025}{Convener}{}{Flavor Tagging Group}{}{}
+\cventry{2024}{ATLAS Outstanding Achievement Award}{}{}{}{
+  For outstanding contributions to heavy flavour tagging algorithms based on Graph Neural Networks
+}
 \cventry{2020--2022}{Signature Coordinator}{$b$-jets}{Trigger Group}{}{}
 \cventry{2018--2021}{Analysis Contact}{Mono-$H$, $H \to b\bar{b}$}{Exotics Group}{}{}
 \cventry{2018--2020}{Convener}{Machine Learning Forum}{Computing Group}{}{}
