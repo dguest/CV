@@ -15,6 +15,7 @@
 
 %% custom commands
 \newcommand{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{\texttt{arXiv:#1}}}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{DOI: \texttt{#1}}}
 
 \newlength{\savedindent}
 
@@ -194,6 +195,23 @@
 %% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
 
 \input{publist}
+
+\section{Open Software and Data}
+\subsection{Datasets}
+\cvitem{\textsc{JetSet}}{
+  Simulated ATLAS $t\bar{t}$ data for ML-based jet flavor tagging.
+  \newline{}
+  \doi{10.7483/OPENDATA.ATLAS.QG8W.TO8P}
+}
+\cvitem{\textsc{Jet Flavor}}{\textsc{Delphes} simulation for flavor tagging. \newline{} URL: \href{https://mlphysics.ics.uci.edu/data/hb_jet_flavor_2016}{\texttt{https://mlphysics.ics.uci.edu/data/hb\_jet\_flavor\_2016}}}
+\subsection{Libraries and Frameworks}
+% \doi{10.7483/OPENDATA.ATLAS.QG8W.TO8P}
+\cvitem{\textsc{lwtnn}}{Lightweight trained neural network, implemented in C++.
+  \newline{}
+  \doi{10.5281/zenodo.5082190}}
+
+\subsection{Other Small Projects}
+\cvlistitem{\textsc{pandamonium}: Command line interface to the ATLAS \textsc{PanDA} distributed analysis system. \doi{10.5281/zenodo.4019463}}
 
 \section{Conferences, Seminars, and Tutorials {\small ($\bigstar$ event organizer)}}
 
