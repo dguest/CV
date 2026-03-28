@@ -35,28 +35,36 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+%% \usepackage{academicons}
+%% \newcommand{\inspiresocialsymbol}{\aiInspire~}
+%% The above one doesn't really look like inspire
+\newcommand{\inspiresocialsymbol}{}
+
 \usepackage{bm}
 
 % personal data
 \name{Dan}{Guest}
 \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
-\address{6 All\'ee Charles Baudelaire, Apt.\ A24}{01630 St.\,Genis-Pouilly, France}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-%% \phone[mobile]{+1~(234)~567~890} 
-% optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-%% \phone[fixed]{+2~(345)~678~901}
-%% \phone[fax]{+3~(456)~789~012}
+\address{6 All\'ee Charles Baudelaire, Apt.\ A24}{01630 St.\,Genis-Pouilly, France}{}
+% optional, remove / comment the line if not wanted; the "postcode city" and"country" arguments can be omitted or provided empty
 \email{dguest@cern.ch}
 %\homepage{www.johndoe.com}
 %\social[linkedin]{john.doe}
 %\social[xing]{john\_doe}
 %\social[twitter]{jdoe}
 \social[orcid]{0000-0002-4305-2295}
+\social[gitlab][https://gitlab.cern.ch/dguest]{gitlab.cern.ch/dguest}
+\social[inspire][https://inspirehep.net/authors/D.Guest.1]{Inspire: D.Guest.1}
 \social[github]{dguest}
-\social[inspire]{D.Guest.1}   % not sure why this doesn't work right now
-%\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
-\extrainfo{\gitlabsocialsymbol\href{https://gitlab.cern.ch/dguest}{dguest}}                 % optional, remove / comment the line if not wanted
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
-\photo[56pt][0pt]{images/DG-sheer.jpg}
+\photo[65pt][0pt]{images/DG-sheer.jpg}
+
+%% \phone[mobile]{+1~(234)~567~890}
+% optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%% \phone[fixed]{+2~(345)~678~901}
+%% \phone[fax]{+3~(456)~789~012}
+
+
+\fancyfoot[C]{\textit{Updated: \today}}
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
