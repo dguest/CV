@@ -1,5 +1,5 @@
 BIBTEX   = biber
-PDFTEX = pdflatex -interaction=nonstopmode -halt-on-error -shell-escape
+PDFTEX = lualatex -interaction=nonstopmode -halt-on-error -shell-escape
 
 .PHONY: all
 
