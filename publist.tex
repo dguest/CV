@@ -3,52 +3,177 @@
   \texttt{\href{https://atlas-glance.cern.ch/atlas/analysis/pubnotes/details.php?ref_code=#1}{#1}}}
 \newcommand{\cds}[1]{Available from CERN: \url{https://cds.cern.ch/record/#1}}
 
-\section{Selected Publications}
-\subsection{Hundreds of published papers as part of the ATLAS Collaboration with over 10,000 citations.}
-\cvitem{In Prep}{Deep Sets and Event-Level Maximum-Likelihood Estimation for Fast Pile-Up Jet Rejection\newline{}
-  \wip{PUB-TRIG-2025-01}
+\newcommand{\contrib}[1]{
   \ifshowcontributions
-  This is some info
+  \newline{}
+  {\small #1}
   \fi
 }
+
+\section{Selected Publications}
+\subsection{Hundreds of published papers as part of the ATLAS Collaboration with over 10,000 citations.}
+
+\cvitem{April 2026}{Deep Sets and Event-Level Maximum-Likelihood Estimation for Fast Pile-Up Jet Rejection\newline{}
+  \cds{2959943}
+  \contrib{
+    This short note documents a versatile jet origin estimate and presents a way to combine jets to build an event-wise trigger.
+    I implemented the initial pipeline to train and deploy in the ATLAS trigger.
+    A student optimised the network and worked with me to design the event-wise selection, which was implemented by the student and another researcher.
+    The student created the plots and wrote the text.
+  }
+}
+
+\ifmorepapers
 \cvitem{In Prep}{Tau Trigger Run 3 Performance\newline{}
   \wip{ANA-TRIG-2024-01}
 }
+\fi
+
+\ifmorepapers
 \cvitem{Jan 2026}{The GN3 Flavor Tagging Algorithm\newline{}
   \cds{2953652}
+  \contrib{
+    This new algorithm demonstrates benefits of the simplified algorithmic structure first shown in GN2.
+    GN2 was intentionally conservative, here we showed that added low-level inputs can improve classification, and the network can simultaneously provide multiple outputs.
+    I built and maintained the training pipeline and the implementation in ATLAS reconstruction code.
+    As Flavor Tagging Group convener I oversaw all the remaining work in the publication.
+  }
 }
+\fi
+
+\ifmorepapers
 \cvitem{Dec 2025}{Carpe Datum: Scaling behavior of transformers for heavy hadron flavor identification\newline{}
   \cds{2953659}
+  \contrib{
+    Here we showed that training larger networks on much more simulated ATLAS data leads to better classification (also in ATLAS simulation).
+    I did relatively little here, beyond building and maintaining the training pipeline that made the result possible.
+    This result is listed because determining how to support such large models will be a major challenge in the future.
+  }
 }
+\fi
+
 \cvitem{July 2025}{Transforming Jet Flavour Tagging at ATLAS\newline{}
   \texttt{\href{https://doi.org/10.1038/s41467-025-65059-6}{Nature Commun.\ 17 (2026) 541}}, \arxiv{2505.19689}
+  \contrib{
+    The first transformer-based flavor tagging network in ATLAS.
+    This removed several intermediate algorithms and used raw tracking information.
+    As with all flavor tagging results listed, I built and maintained the training pipeline and the implementation in reconstruction.
+    I also designed and implemented the multi-fold training strategy which avoids overtraining.
+  }
 }
+
+\ifmorepapers
 \cvitem{Jan 2025}{Performance and Commissioning of the ATLAS $b$-jet Triggers for the 2022 and 2023 LHC Running\newline{}
   \texttt{\href{https://doi.org/10.1088/1748-0221/20/03/P03002}{JINST 20 (2025) P03002}}, \arxiv{2501.11420}
+  \contrib{
+    I implemented the taggers presented here in the ATLAS high-level trigger.
+    I also merged the trigger and offline training pipelines (previously they were separated), and supervised the students training the taggers.
+    The ATLAS run 3 trigger was commissioned while I was $b$-jet trigger signature contact.
+  }
 }
+\fi
+
+\ifmorepapers
 \cvitem{June 2024}{The ATLAS Trigger System for LHC Run 3 and Trigger performance in 2022\newline{}
   \texttt{\href{https://doi.org/10.1088/1748-0221/19/06/P06029}{JINST 19 (2024) P06029}}, \arxiv{2401.06630}
 }
+\fi
+
+\ifmorepapers
 \cvitem{July 2023}{ATLAS flavour-tagging algorithms for the LHC Run 2 $pp$ collision dataset\newline{}
   \texttt{\href{https://doi.org/10.1140/epjc/s10052-023-11699-1}{Eur. Phys. J. C 83 (2023) 681}}, \arxiv{2211.16345}}
+\fi
+
 \cvitem{Nov 2023}{Fast $b$-tagging at the high-level trigger of the ATLAS experiment in LHC Run 3\newline{}
-  \texttt{\href{https://doi.org/10.1088/1748-0221/18/11/P11006}{JINST 18 (2023) P11006}}, \arxiv{2306.09738}}
+  \texttt{\href{https://doi.org/10.1088/1748-0221/18/11/P11006}{JINST 18 (2023) P11006}}, \arxiv{2306.09738}
+  \contrib{
+    The first ATLAS collision data paper of run 3!
+    As with other $b$-jet trigger publications I was responsible for the training pipeline and the implementation in the high-level trigger.
+    I also wrote the paper along with my co-editor.
+  }
+}
+
+
 \cvitem{Nov 2021}{Search for dark matter produced in association with a Standard Model Higgs boson decaying into $b$-quarks using the full Run 2 dataset from the ATLAS detector\newline{}
-  \texttt{\href{https://doi.org/10.1007/JHEP11(2021)209}{JHEP 11 (2021) 209}}, \arxiv{2108.13391}}
+  \texttt{\href{https://doi.org/10.1007/JHEP11(2021)209}{JHEP 11 (2021) 209}}, \arxiv{2108.13391}
+  \contrib{
+    I was one of two analysis contacts.
+    I ran a team of $O(10)$ active contributors, built an overall analysis plan, helped to triage bugs, coordinated data productions, delegated work to students and helped them prepare status reports to the Exotics Group on our behalf.
+  }
+}
+
+\cvitem{July 2020}{Identification of Boosted Higgs Bosons Decaying Into $b\bar{b}$
+  With Neural Networks and Variable Radius Subjets in ATLAS\newline{}
+  \cds{2724739}
+  \contrib{
+    This was ATLAS's first implementation of a boosted-$H$ tagger that combined a number of subjets into a single neural network.
+    I supervised the student who trained the network, and implemented the network in ATLAS reconstruction code.
+    I also produced most of the plots, and wrote some of the text.
+  }
+}
+
+\ifmorepapers
 \cvitem{Oct 2019}{Identification of boosted Higgs bosons decaying into $b$-quark pairs with the ATLAS detector at 13 TeV\newline{}
-\texttt{\href{https://doi.org/10.1140/epjc/s10052-019-7335-x}{Eur. Phys. J. C 79 (2019) 836}}, \arxiv{1906.11005}}
+  \texttt{\href{https://doi.org/10.1140/epjc/s10052-019-7335-x}{Eur. Phys. J. C 79 (2019) 836}}, \arxiv{1906.11005}
+}
+\fi
+
+\ifmorepapers
 \cvitem{Aug 2019}{Search for low-mass resonances decaying into two jets and produced in association with a photon using $pp$ collisions at $\sqrt{s}=13\,\mathrm{TeV}$ with the ATLAS detector\newline{}
-\texttt{\href{https://doi.org/10.1016/j.physletb.2019.03.067}{Phys. Lett. B 795 (2019) 56}}, \arxiv{1901.10917}}
+  \texttt{\href{https://doi.org/10.1016/j.physletb.2019.03.067}{Ann. Rev. Nucl. Part. Sci. 68 (2018) 161}}, \arxiv{1806.11484}}
+\fi
+
 %% \cvitem{Nov 2017}{Search for Dark Matter Produced in Association with a Higgs Boson Decaying to $b \bar{b}$ Using 36 $\mathrm{fb}^{-1}$ of $pp$ Collisions at $\sqrt{s}=13\,\mathrm{TeV}$ with the ATLAS Detector\newline{} \texttt{\href{https://doi.org/10.1103/PhysRevLett.119.181804}{Phys. Rev. Lett. 119, 181804}}, \arxiv{1707.01302}}
 %% \cvitem{July 2017}{Optimisation and performance studies of the ATLAS $b$-tagging algorithms for the 2017-18 LHC run\newline{}
 %%   \texttt{Available from CERN: }\url{https://cds.cern.ch/record/2273281}}
+
+\cvitem{Oct 2018}{Deep Learning and Its Application to LHC Physics\newline{}
+  \texttt{\href{https://doi.org/10.1146/annurev-nucl-101917-021019}{Ann. Rev. Nucl. Part. Sci. 68, 161 (2018)}}
+  \contrib{
+    I was first author (of three) on this review article.
+  }
+}
+
+\ifmorepapers
 \cvitem{June 2017}{Variable Radius, Exclusive-$k_{\mathrm{T}}$, and Center-of-Mass Subjet Reconstruction for Higgs($\to b\bar{b}$) Tagging in ATLAS\newline{}
-  \cds{2268678}}
+  \cds{2268678}
+}
+\fi
+
 \cvitem{March 2017}{Identification of Jets Containing $b$-Hadrons with Recurrent Neural Networks at the ATLAS Experiment\newline{}
-  \cds{2255226}}
-\cvitem{Dec 2016}{Jet flavor classification in high-energy physics with deep neural networks\newline{} \texttt{\href{https://doi.org/10.1103/PhysRevD.94.112002}{Phys. Rev. D 94, 112002}}, \arxiv{1607.08633}}
-\cvitem{April 2015}{Search for Scalar Charm Quark Pair Production in $pp$ Collisions at $\sqrt{s}=8\,\mathrm{TeV}$ with the ATLAS Detector\newline{} \texttt{\href{https://doi.org/10.1103/PhysRevLett.114.161801}{Phys. Rev. Lett. 114, 161801}}, \arxiv{1501.01325}}
+  \cds{2255226}
+  \contrib{
+    This was one of the first ATLAS results to apply a neural network trained with the \textsc{Keras} library, which was at the time the standard tool for industry ML.
+    I wrote the library we used to apply the \textsc{Keras} training in ATLAS software.
+    I wrote a significant fraction of the note.
+  }
+}
+
+\cvitem{Dec 2016}{Jet flavor classification in high-energy physics with deep neural networks\newline{} \texttt{\href{https://doi.org/10.1103/PhysRevD.94.112002}{Phys. Rev. D 94, 112002}}, \arxiv{1607.08633}
+  \contrib{
+  I'm the first author on this paper.
+  We compared network architectures, including some that naturally processed sequences of tracks, as applied to $b$-tagging in a Delphes dataset.
+  }
+}
+
+\cvitem{April 2015}{Search for Scalar Charm Quark Pair Production in $pp$ Collisions at $\sqrt{s}=8\,\mathrm{TeV}$ with the ATLAS Detector\newline{} \texttt{\href{https://doi.org/10.1103/PhysRevLett.114.161801}{Phys. Rev. Lett. 114, 161801}}, \arxiv{1501.01325}
+  \contrib{
+    The main analysis for my Ph.D.\
+    I was responsible for nearly every aspect of the analysis, from dataset production to fitting to making all the final plots.
+    The paper was written by a senior PI. His student produced the MC signals and derived some generator-based systematic uncertainties.
+  }
+}
+
+\ifmorepapers
 \cvitem{Sept 2014}{Search for pair-produced third-generation squarks decaying via charm quarks or in compressed supersymmetric scenarios in $pp$ collisions at $\sqrt{s}=8\,\mathrm{TeV}$ with the ATLAS detector\newline{} \texttt{\href{https://doi.org/10.1103/PhysRevD.90.052008}{Phys. Rev. D 90, 052008}}, \arxiv{1407.0608}}
+\fi
+
 \cvitem{Jan 2015}{Performance and Calibration of the JetFitterCharm Algorithm for $c$-Jet Identification\newline{}
-  \cds{1980463}}
+  \cds{1980463}
+  \contrib{
+    Documentation for the first charm tagger in atlas.
+    I trained the tagger, deployed it in our software, made all the plots and wrote the note.
+    Other colleagues contributed the scale factor measurements to verify the performance in data.
+  }
+}
 
