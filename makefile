@@ -1,5 +1,4 @@
-BIBTEX   = biber
-PDFTEX = lualatex -interaction=nonstopmode -halt-on-error -shell-escape
+LUALATEX = lualatex -interaction=nonstopmode -halt-on-error -shell-escape
 
 .PHONY: all
 
@@ -15,4 +14,4 @@ dguest-cv-short.pdf dguest-cv.pdf dguest-cv-extended.pdf: cv.tex cv-defs.tex
 dguest-cv.pdf dguest-cv-extended.pdf dguest-publist.pdf dguest-publist-extended.pdf: publist.tex
 
 %.pdf: %.tex defs.tex
-	$(PDFTEX) $<
+	$(LUALATEX) $<
