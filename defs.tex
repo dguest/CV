@@ -6,15 +6,14 @@
 \newif\ifmorepapers
 \morepaperstrue
 
-\newcommand{\contrib}[1]{
-  \ifshowcontributions
-  \newline{}
-  {\small #1}
-  \fi
-}
+\newcommand{\contrib}[1]{\ifshowcontributions\newline{}{\small #1}\fi}
 
-\newcommand{\cvcontrib}[1]{
+%% Use instead of \cventry when the description is conditional on \ifshowcontributions.
+%% Passes a truly empty 7th arg when off, avoiding moderncv's unexpanded \ifx check.
+\newcommand{\cvcontribentry}[6]{%
   \ifshowcontributions
-  {\small #1}
+    \cventry{#1}{#2}{#3}{#4}{#5}{\small #6}%
+  \else
+    \cventry{#1}{#2}{#3}{#4}{#5}{}%
   \fi
 }
