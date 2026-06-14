@@ -5,3 +5,16 @@
 
 \newif\ifmorepapers
 \morepaperstrue
+
+\newcommand{\contrib}[1]{
+  \ifshowcontributions
+  \newline{}
+  {\small #1}
+  \fi
+}
+
+\newcommand{\cvcontrib}[1]{
+  \ifshowcontributions
+  {\small #1}
+  \fi
+}

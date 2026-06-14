@@ -1,0 +1,56 @@
+%% Shared preamble for all dguest-cv*.tex documents.
+%% Input this file as the first line of each CV variant.
+
+%% things I can't decide on, define as macros
+\newcommand{\postdoc}{Postdoc}
+\newcommand{\atlas}{ATLAS}
+
+%% set hyperref color
+\PassOptionsToPackage{colorlinks=true, urlcolor=blue!40!black}{hyperref}
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% custom commands
+\newcommand{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{\texttt{arXiv:#1}}}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{DOI: \texttt{#1}}}
+
+\newlength{\savedindent}
+
+%% try not to add new sections right at the end of a page
+\usepackage{needspace}
+\AtBeginDocument{%
+  \let\oldsection\section
+  \renewcommand{\section}[1]{\needspace{3\baselineskip}\oldsection{#1}}%
+}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{black}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\usepackage{amssymb}
+
+\newcommand{\inspiresocialsymbol}{}
+
+\usepackage{bm}
+
+% personal data
+\name{Dan}{Guest}
+\title{Curriculum Vitae}
+\address{6 All\'ee Charles Baudelaire, Apt.\ A24}{01630 St.\,Genis-Pouilly, France}{}
+\email{dguest@cern.ch}
+\social[orcid]{0000-0002-4305-2295}
+\social[gitlab][https://gitlab.cern.ch/dguest]{gitlab.cern.ch/dguest}
+\social[inspire][https://inspirehep.net/authors/D.Guest.1]{Inspire: D.Guest.1}
+\social[github]{dguest}
+\photo[65pt][0pt]{images/DG-sheer.jpg}
+
+%% \cvurl is set per-document to \url{...} \\ (with trailing line break).
+%% Defaults to empty so the extended-style date-only footer works without override.
+\newcommand{\cvurl}{}
+\fancyfoot[C]{\footnotesize \cvurl Updated: \textit{\today}}
+
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+
+\include{defs.tex}

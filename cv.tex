@@ -1,0 +1,180 @@
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2016}{Ph.D. Physics}{Yale University}{New Haven, Connecticut, USA}{}{Thesis: A Search for Scalar Charm Quarks with the ATLAS Detector at the LHC}  % arguments 3 to 6 can be left empty
+\cventry{2007}{B.A. Physics}{Amherst College}{Amherst, Massachusetts, USA}{\textit{magna cum laude}}{Thesis: A cross-Beam Far Off-Resonance Optical Trap for $^{87}\mathrm{Rb}$ Bose-Einstein Condensates}
+
+\section{Research Experience}
+\subsection{As ATLAS Experiment Member}
+\cventry{Nov 2020--}{\postdoc}{Humboldt University}{Berlin, DE}{}{
+  \begin{itemize}
+  \item Designed and implemented the $b$-jet trigger strategy to probe $HH$ production in the $b \bar{b} b \bar{b}$ final state.
+  \item Mentored students working toward $HH \to b \bar{b} b \bar{b}$ physics publications.
+  \item Designed the analysis framework used by multiple ATLAS $HH$ analyses. This has become one of two analysis-level software frameworks recommended by ATLAS for physics publications.
+  \item Built and maintained the training data pipeline for ATLAS's machine-learning--based $b$-hadron identification software. As $b$-jet trigger contact I worked to unify this pipeline between trigger and subsequent ``offline'' analysis.
+  \item Oversaw (as flavor tagging convener) the deployment of several of the most powerful neural networks in use in ATLAS. These networks pushed the limits of experimental sensitivity.
+  \end{itemize}
+}
+\cventry{2020}{\postdoc}{Universit\"{a}t Innsbruck}{Innsbruck, AT}{}{
+  Mandate identical to that at Humboldt University
+}
+\cventry{2015--2020}{\postdoc}{University of California, Irvine}{Irvine, CA, USA}{}{
+  \begin{itemize}
+  \item Searched for exotic particles in simplified extensions of the Standard Model. I led an analysis searching for dark matter produced in association with boosted $H$ jets.
+  \item Deployed the earliest ``deep'' neural networks in ATLAS. I wrote the code which ran early TensorFlow/Theano-based NNs in ATLAS. Later as the Machine Learning Forum convener I oversaw ATLAS's transition to emerging industry-standard frameworks.
+  \end{itemize}
+}
+\cventry{2008--2016}{Ph.D.\ Candidate}{Yale University}{New Haven, Connecticut, USA}{}{
+  \begin{itemize}
+  \item Was one of roughly 2 students responsible for the first 2nd-generation Scalar Quark search.
+  \item Developed ATLAS's first $c$-quark identification algorithm (to identify $\tilde{c} \to c$)
+  \item Measured the efficiency of individual detector elements in the Transition Radiation Tracker.
+  \item Assisted in undergraduate-level lab and theory classes.
+  \end{itemize}
+}
+\subsection{Before ATLAS Involvement}
+\cventry{2007--2008}{Teaching Fellow}{Amherst College}{Amherst, Massachusetts, USA}{}{
+  \begin{itemize}
+  \item Introductory Mechanics Lab
+  \item Introductory Electromagnetism Lab
+  \end{itemize}
+}
+\cventry{2005--2007}{Research Assistant}{Hall Labs}{Amherst MA, USA}{}{%
+  \begin{itemize}
+  \item Optical trapping in dilute atomic gas
+  \item Vacuum deposition for optical coatings
+  \end{itemize}
+}
+\cventry{2003--2004}{Research Assistant}{Dartmouth Medical School}{Hanover NH, USA}{}{
+  \begin{itemize}
+  \item Data acquisition via rodent telemetry
+  \item Data analysis in MATLAB
+  \end{itemize}
+}
+
+\section{Appointments and Awards in \atlas}
+
+\cventry{2026--}{Board Member}{}{Early Career Scientist Board}{}{\cvcontrib{%
+  I joined the Early Career Scientist Board (ECSB) to bridge the divide between the younger students and the senior physicists who run the experiment. \\
+  As a member of the ECSB I strive to improve communication on all sides: young researchers don't always articulate their dissatisfaction with the collaboration in productive ways, and they can be unaware of some of the most fun and understaffed projects within the experiment. \\
+  Streamlining communication and training for early career researchers is going to be one of the biggest challenges in keeping our experiment running and productive into run 4. Our young researchers have enormous potential if they can be encouraged to engage fully with the collaboration, on both technical and political levels. \\
+}}
+\cventry{2025--}{ATLAS Contact}{}{Inter-Experimental LHC Machine Learning Working Group}{}{\cvcontrib{%
+  I believe communication between experiments and with the external community is an essential catalyst for scientific progress at the LHC. Groups like this one exist to ensure that ideas are shared freely and productively.
+}}
+\cventry{2023--2025}{Convener}{}{Flavor Tagging Group}{}{\cvcontrib{%
+  I took charge of the ATLAS flavor tagging group at a very interesting time. We had recently demonstrated that a single large transformer model, trained on low level inputs, could outperform a hand-crafted sequence of algorithms designed by experts. \\
+  Under my leadership the group used this technology to improve the reach of ATLAS physics, but also to simplify and generalise flavor tagging. This simplification has spawned efforts to harmonize hadronic particle identification across ATLAS: the same transformer that identifies $b$ hadrons can also identify $\tau$ leptons, or $W/Z/H$ bosons. \\
+  As long as this trend continues the ultimate sensitivity of the LHC experiments may far exceed our initial projections. Better yet, the underlying technology could be easier to maintain, and our students better prepared to contribute to data-heavy and ML-heavy fields outside high energy physics.
+}}
+\cventry{2024}{ATLAS Outstanding Achievement Award}{}{}{}{\cvcontrib{%
+  For outstanding contributions to heavy flavour tagging algorithms based on Graph Neural Networks. I was the primary designer and maintainer for the data backbone that supported our most sophisticated taggers.
+}}
+\cventry{2020--2022}{Signature Coordinator}{$b$-jets}{Trigger Group}{}{\cvcontrib{%
+  As the $b$-jet signature coordinator I ensured that ATLAS recorded the data needed for physics analyses in $b$-dominated final states. The $HH \to b\bar{b}b\bar{b}$ search is a flagship example.
+  I accomplished this in a few ways. First, I unified the flavor tagging applied in trigger and that which was applied in subsequent offline analysis. This ensured that our trigger used state-of-the-art algorithms to reject background events and accept signal.
+  Second, we implemented several early-rejection heuristics to reduce the number of events fed to these expensive state-of-the-art algorithms.
+}}
+\cventry{2018--2021}{Analysis Contact}{Mono-$H$, $H \to b\bar{b}$}{Exotics Group}{}{}
+\cventry{2018--2020}{Convener}{Machine Learning Forum}{Computing Group}{}{}
+\cventry{2017--2020}{Flavor Tag Contact}{Boosted $H \to b\bar{b}$ Taskforce}{ATLAS Combined Performance}{}{}
+\cventry{Fall~2018}{Taskforce Chair}{Software and Database Review}{Flavor Tagging Group}{}{}
+
+\section{Open Software and Data}
+\subsection{Datasets}
+\cvitem{\textsc{JetSet}}{
+  Simulated ATLAS $t\bar{t}$ data for ML-based jet flavor tagging.
+  \newline{}
+  \doi{10.7483/OPENDATA.ATLAS.QG8W.TO8P}
+}
+\cvitem{\textsc{Jet Flavor}}{\textsc{Delphes} simulation for flavor tagging. \newline{} URL: \url{https://mlphysics.ics.uci.edu/data/hb_jet_flavor_2016}}
+\subsection{Libraries and Frameworks}
+\cvitem{\textsc{lwtnn}}{Lightweight trained neural network, implemented in C++.
+  \newline{}
+  \doi{10.5281/zenodo.5082190}}
+\cvitem{\textsc{easyjet}}{Data processing framework for ATLAS $HH$ searches. \newline{} \doi{10.5281/zenodo.15927812}}
+
+\cvitem{\textsc{FTag TDD}}{
+  Data processing framework for ATLAS ML-based flavor tagging.
+  \newline{}
+  URL: \texttt{\href{https://gitlab.cern.ch/aft/algorithms/training-dataset-dumper/}{gitlab.cern.ch/aft/algorithms/training-dataset-dumper/}}
+}
+
+\subsection{Other Small Projects}
+\cvlistitem{\textsc{pandamonium}: Command line interface to the ATLAS \textsc{PanDA} distributed analysis system. \doi{10.5281/zenodo.4019463}}
+\cvlistitem{\textsc{Matt LeBlanc Trains a Neural Network}: Part blog entry, part tutorial. \newline{} \url{https://github.com/dguest/mlbnn/tree/master}}
+
+\section{Conferences, Seminars, and Tutorials {\small ($\bigstar$ event organizer)}}
+
+\cventry{Sept 2025}{$\bigstar$ \href{https://indico.cern.ch/event/1552037}{ATLAS Hadronic Identification Workshop}}{}{CERN}{}{}
+\cventry{June 2025}{Mistakes in Machine Learning}{\href{https://indico.cern.ch/event/1535047/contributions/6491345/}{ATLAS Collaboration Week June 2025}}{CERN}{}{}
+\cventry{May 2025}{Machine Learning for Trigger, Reconstruction, and Simulation}{\href{https://indico.cern.ch/event/1419878/contributions/6424738/}{LHCP 2025}}{Taipei, Taiwan}{}{}
+\cventry{Sept 2024}{$\bigstar$ \href{https://indico.cern.ch/event/1387465/}{2024 ATLAS-CMS Flavour Tagging Workshop}}{}{Genova}{}{}
+\cventry{Nov 2022}{Probing electroweak symmetry breaking with Higgs pairs in ATLAS}{\href{https://indico.cern.ch/event/1151741/contributions/5047067/}{SILAFAE 2022}}{Quito, Ecuador}{}{}
+\cventry{Nov 2019}{$\bigstar$ \href{https://indico.cern.ch/event/844092}{4th ATLAS Machine Learning Workshop}}{}{CERN}{}{}
+\cventry{August 2019}{Machine Learning in Particle Experiments}{\href{https://indico.cern.ch/event/783977/contributions/3467062/}{Dark Matter @ LHC 2019}}{Seattle, Washington, USA}{}{}
+\cventry{June 2019}{$\bigstar$ Machine Learning Tutorial }{\href{https://indico.cern.ch/event/795039/contributions/3455082/}{ATLAS Tracking and Flavour Tagging Workshop}}{DESY, Hamburg}{}{}
+\cventry{March 2019}{Machine Learning in High Energy Physics}{\href{https://indico.cern.ch/event/748043/contributions/3326031/}{2019 Winter Conference: ``In Pursuit of New Particles and Paradigms''}}{Aspen, Colorado, USA}{}{}
+\cventry{Oct 2018}{$\bigstar$ \href{https://indico.cern.ch/event/735932/}{3rd ATLAS Machine Learning Workshop}}{}{CERN}{}{}
+\cventry{Dec 2017}{Boosted Object Tagging: Flavor Tagging of Boosted Objects}{\href{https://indico.cern.ch/event/675559/}{ATLAS Workshop: Physics with $120\,\mathrm{fb}^{-1}$}}{CERN}{}{}
+\cventry{Sept 2017}{Searches For SUSY and Dark Matter from ATLAS and CMS}{\href{https://indico.cern.ch/event/659310/}{Top 2017}}{Braga, Portugal}{}{}
+\cventry{Sept 2017}{High-Level Tagging Tools: A 5 Year Plan}{\href{https://indico.cern.ch/event/631313/contributions/2700470/}{ATLAS Joint Flavor Tagging and $H \to bb$ Workshop}}{Stony Brook, New York, USA}{}{}
+\cventry{August 2017}{Boosted Object Tagging: $\bm{H \to bb}$ Tagging}{\href{https://indico.cern.ch/event/642438/}{ATLAS Hadronic Calibration Workshop}}{Toronto, Canada}{}{}
+\cventry{July 2017}{How do we define Jets?}{\href{https://www.weizmann.ac.il/conferences/SRitp/Summer2017/}{Hammers and Nails --- Machine Learning \& HEP}}{Weizmann Institute of Science}{Rehovot, Israel}{}{}
+\cventry{June 2017}{Machine Learning for Object Identification at the LHC}{\href{https://www.uni-goettingen.de/en/seminars/496592.html}{Seminars of the 2nd Institute of Physics}}{G\"ottingen, Germany}{}{}
+\cventry{May 2017}{Introduction to High Level Taggers}{\href{https://indico.cern.ch/event/615994/}{ATLAS Workshop on Machine Learning and $b$-tagging}}{SLAC, Menlo Park, California, USA}{}{}
+\cventry{May 2017}{Jet $\bm{b}$-tagging with Recurrent Neural Networks}{\href{https://indico.fnal.gov/event/13497/}{DS@HEP 2017}}{Fermilab, Illinois, USA}{}{}
+\cventry{July 2016}{Deep Learning for Boosted Object Tagging}{\href{https://indico.cern.ch/event/439039/}{Boost 2016}}{Zurich, Switzerland}{}{}
+\cventry{Jan 2014}{Collider Cross-Talk: Charm tagging in ATLAS \& CMS}{The Top-Charm Frontier at the LHC}{CERN, Switzerland}{}{}
+\cventry{Jan 2014}{Compressed Stop to Charm Searches in ATLAS}{The Top-Charm Frontier at the LHC}{CERN, Switzerland}{}{}
+\cventry{Dec 2013}{Searches for Direct Pair Production of Third Generation Squarks with the ATLAS Detector}{\href{https://www.phy.ncu.edu.tw/hep/pascos2013/}{Pascos 2013}}{Taipei, Taiwan}{}{}
+
+\subsection{As Co-author}
+
+\cventry{May 2008}{Vortex Lattices in a Crossed-Beam Optical Dipole Trap}{39th Annual Meeting of the APS Division of Atomic, Molecular, and Optical Physics}{State College, Pennsylvania, USA}{}{}
+
+
+\section{Teaching}
+
+\cventry{August 2019}{ATLAS Software Bootcamp}{\href{https://smeehan12.github.io/2019-08-19-usatlas-computing-bootcamp/}{Lawrence Berkeley National Laboratory}}{}{}{Version control, containers, and continuous integration for ATLAS workflows}
+\cventry{October 2014}{Software Carpentry}{Yale University}{}{}{Practical Bash, Python, and version control for physical sciences}
+\cventry{Spring 2010}{Advanced Lab}{Yale University}{}{}{Teaching assistant for Steve Lamoreaux}
+\cventry{Fall 2009}{Intermediate Lab}{Yale University}{}{}{Teaching assistant for Andreas Heinz}
+\cventry{Spring 2009}{Advanced General Physics}{Yale University}{}{}{Teaching assistant for Sohrab Ismail-Beigi}
+\cventry{Fall 2008}{General Physics Laboratory}{Yale University}{}{}{Teaching assistant for David DeMille}
+\cventry{Spring 2008}{General Physics Laboratory}{Yale University}{}{}{Teaching assistant for David DeMille}
+\cventry{2007-2008}{Teaching Fellow}{Amherst College}{}{}{Full-time teaching assistant for freshman-level physics}
+\cventry{Fall 2005}{Methods of Theoretical Physics}{Amherst College}{}{}{Teaching assistant for Kannan Jagannathan}
+
+\section{Mentoring}
+
+\subsection{Graduate Students}
+\cventry{2020--}{Victor Hugo Ruelas Rivera}{}{Humboldt University of Berlin}{}{
+  \begin{itemize}
+  \item Software and Machine Learning for the ATLAS High Level Trigger
+  \item Probing di-Higgs coupling via $HH \to b\bar{b}b\bar{b}$
+  \end{itemize}
+}
+\cventry{2016--2020}{Yvonne Ng}{}{UC Irvine (Physics)}{}{
+  \begin{itemize}
+  \item Gaussian Processes for background modeling
+  \item Searches for low-mass hadronic resonances
+  \end{itemize}
+}
+\cventry{2015--2020}{Julian Collado}{}{UC Irvine (Computer Science)}{}{Machine Learning for boosted Higgs tagging}
+\cventry{2015--2020}{Daniel Antrim}{}{UC Irvine (Physics)}{}{
+  General software and physics mentoring
+}
+\cventry{2016--2017}{Joshua Smith}{}{G\"ottingen (Physics)}{}{
+  Machine learning for LHC data analysis}
+\cventry{2015--2017}{Kevin Bauer}{}{UC Irvine (Physics)}{}{
+  \begin{itemize}
+  \item Search for $Z'$ production in association with Dark Matter
+  \item Software development for ATLAS data acquisition system
+  \end{itemize}
+}
+\subsection{Undergraduates}
+\cventry{2013--2014}{Luke de Oliveira}{}{Yale University}{}{Machine learning for $b$ and $c$-tagging}
+\cventry{2013}{David Roeca}{}{Yale University}{}{Supersymmetric charm searches}
+\cventry{2012}{Ariel Ekblaw}{}{Yale University}{}{Supersymmetric top decaying to charm jets}

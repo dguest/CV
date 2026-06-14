@@ -1,0 +1,40 @@
+%% start of file `dguest-publist-extended.tex'.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% custom commands
+\newcommand{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{\texttt{arXiv:#1}}}
+
+\newlength{\savedindent}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{black}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\usepackage{amssymb}
+
+\usepackage{bm}
+
+% personal data
+\name{Dan}{Guest}
+\title{Publication List}
+\address{6 All\'ee Charles Baudelaire, Apt. A24}{01630 St.\,Genis-Pouilly}{France}
+\email{dguest@cern.ch}
+\social[github]{dguest}
+
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\include{defs.tex}
+
+\showcontributionsfalse
+\morepaperstrue
+
+\begin{document}
+\makecvtitle
+\input{publist}
+\end{document}

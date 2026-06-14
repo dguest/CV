@@ -10,6 +10,9 @@ all: $(ALLSRC:.tex=.pdf)
 IGNORE_WARNINGS := 'Marginpar on page|float specifier changed'
 COLOR_WARNINGS := '^LaTeX Warning:|Fatal error'
 FILTER_WARN := egrep -v $(IGNORE_WARNINGS) | egrep --color $(COLOR_WARNINGS)
-%.pdf: %.tex publist.tex
-	$(PDFTEX) $<
 
+dguest-cv-short.pdf dguest-cv.pdf dguest-cv-extended.pdf: cv.tex cv-defs.tex
+dguest-cv.pdf dguest-cv-extended.pdf dguest-publist.pdf dguest-publist-extended.pdf: publist.tex
+
+%.pdf: %.tex defs.tex
+	$(PDFTEX) $<
